@@ -1,0 +1,122 @@
+#!/bin/bash
+
+# Written by Mauricio Pamplona Segundo for Program Design
+# try_project1_halley is a Unix shell script that will be used to test project 1.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_project1_halley
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_project1_halley
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+2021
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 2021'
+echo 'Next appearance: 2062'
+echo '===================================================='
+./a.out <<-EndOfInput
+2061
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 2061'
+echo 'Next appearance: 2062'
+echo '===================================================='
+./a.out <<-EndOfInput
+2062
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 2062'
+echo 'Next appearance: 2138'
+echo '===================================================='
+./a.out <<-EndOfInput
+6755
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 6755'
+echo 'Next appearance: 6774'
+echo '===================================================='
+./a.out <<-EndOfInput
+8549
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 8549'
+echo 'Next appearance: 8598'
+echo '===================================================='
+./a.out <<-EndOfInput
+9902
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 9902'
+echo 'Next appearance: 9966'
+echo '===================================================='
+./a.out <<-EndOfInput
+4818
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 4818'
+echo 'Next appearance: 4874'
+echo '===================================================='
+./a.out <<-EndOfInput
+8488
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 8488'
+echo 'Next appearance: 8522'
+echo '===================================================='
+./a.out <<-EndOfInput
+4029
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 4029'
+echo 'Next appearance: 4038'
+echo '===================================================='
+./a.out <<-EndOfInput
+8338
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 8338'
+echo 'Next appearance: 8370'
+echo '===================================================='
+./a.out <<-EndOfInput
+7203
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 7203'
+echo 'Next appearance: 7230'
+echo '===================================================='
+./a.out <<-EndOfInput
+0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 0'
+echo 'Invalid year 0'
+echo 'Input year must be greater than 1986'
+echo '===================================================='
+./a.out <<-EndOfInput
+1986
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter year: 1986'
+echo 'Invalid year 1986'
+echo 'Input year must be greater than 1986'
+echo '----------------------------------------------------'
+
+
+
